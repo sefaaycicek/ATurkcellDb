@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DC93D5B02CAFC7270044F282 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = DC93D5AF2CAFC7270044F282 /* Realm */; };
+		DC93D5B22CAFC7270044F282 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DC93D5B12CAFC7270044F282 /* RealmSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		DC93D5962CAFC5320044F282 /* ATurkcellDb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATurkcellDb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC93D5B22CAFC7270044F282 /* RealmSwift in Frameworks */,
+				DC93D5B02CAFC7270044F282 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,8 @@
 			);
 			name = ATurkcellDb;
 			packageProductDependencies = (
+				DC93D5AF2CAFC7270044F282 /* Realm */,
+				DC93D5B12CAFC7270044F282 /* RealmSwift */,
 			);
 			productName = ATurkcellDb;
 			productReference = DC93D5962CAFC5320044F282 /* ATurkcellDb.app */;
@@ -107,6 +116,9 @@
 			);
 			mainGroup = DC93D58D2CAFC5320044F282;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DC93D5AE2CAFC7270044F282 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DC93D5972CAFC5320044F282 /* Products */;
 			projectDirPath = "";
@@ -153,6 +165,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -181,6 +194,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +349,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DC93D5AE2CAFC7270044F282 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.40.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DC93D5AF2CAFC7270044F282 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC93D5AE2CAFC7270044F282 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		DC93D5B12CAFC7270044F282 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC93D5AE2CAFC7270044F282 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DC93D58E2CAFC5320044F282 /* Project object */;
 }
